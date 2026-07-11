@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deals &amp; Offers — KIGALI REACH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <a href="https://wa.me/250788000000" target="_blank" class="topbar-wa">
+    <svg viewBox="0 0 24 24" fill="currentColor" style="width:13px;height:13px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.526 5.854L0 24l6.335-1.509C8.05 23.447 9.99 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.656-.52-5.168-1.424l-.371-.22-3.763.897.938-3.669-.241-.387A9.93 9.93 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    +250 788 000 000
+  </a>
+  <div class="topbar-marquee"><div class="topbar-marquee-inner"><span>🔥</span> MEGA SALE — Up to 70% OFF! &nbsp;|&nbsp; Wishyura ukoresheje MTN MoMo! &nbsp;|&nbsp; <span>🚚</span> Free delivery above 20,000 RWF! &nbsp;&nbsp;&nbsp;&nbsp;</div></div>
+  <div class="topbar-right">
+    <button class="lang-btn" data-lang-btn="en">EN</button>
+    <button class="lang-btn" data-lang-btn="rw">RW</button>
+    <span class="topbar-divider">|</span>
+    <button class="cur-btn" data-cur-btn="RWF">RWF</button>
+    <button class="cur-btn" data-cur-btn="USD">USD</button>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-main">
+    <a href="index.html" class="logo"><div class="logo-icon">KR</div>KIGALI REACH</a>
+    <div class="header-search">
+      <input type="text" class="search-input" placeholder="Search deals...">
+      <button class="search-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+    </div>
+    <div class="header-actions">
+      <a href="wishlist.html" class="header-icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg><span class="icon-badge wl-count">0</span></a>
+      <a href="cart.html" class="header-icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="icon-badge red cart-count">0</span></a>
+      <button class="header-icon-btn" onclick="openLogin()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+      <button class="hamburger" onclick="openSidebar()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="header-nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="products.html" class="nav-link">Products</a>
+    <a href="products.html?filter=new" class="nav-link">New Arrivals</a>
+    <a href="deals.html" class="nav-link hot active">Deals &amp; Offers 🔥</a>
+    <a href="index.html#how-to-order" class="nav-link">How to Order</a>
+    <a href="index.html#contact" class="nav-link">Contact Us</a>
+  </nav>
+</header>
+
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+<div class="mobile-sidebar" id="mobileSidebar">
+  <button class="sidebar-close" onclick="closeSidebar()">&times;</button>
+  <a href="index.html">Home</a><a href="products.html">Products</a>
+  <a href="deals.html" style="color:#ff6b35">Deals 🔥</a>
+  <a href="cart.html">Cart</a><a href="wishlist.html">Wishlist</a>
+</div>
+
+<!-- DEALS HERO -->
+<div class="deals-hero">
+  <h1>⚡ MEGA SALE — UP TO 70% OFF</h1>
+  <p>Ibiciro Biratashye — Gura Mbere y'Irangira! Limited time offers on top brands.</p>
+</div>
+
+<!-- COUNTDOWN BAR -->
+<div style="background:rgba(229,62,62,.12);border-bottom:1px solid rgba(229,62,62,.3);padding:18px 24px;text-align:center;">
+  <p style="font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">Sale ends in / Birangira mu:</p>
+  <div style="display:flex;justify-content:center;gap:10px">
+    <div class="cd-box"><div class="cd-num" id="cd-d">23</div><div class="cd-lbl">Days</div></div>
+    <span class="cd-sep">:</span>
+    <div class="cd-box"><div class="cd-num" id="cd-h">59</div><div class="cd-lbl">Hrs</div></div>
+    <span class="cd-sep">:</span>
+    <div class="cd-box"><div class="cd-num" id="cd-m">59</div><div class="cd-lbl">Min</div></div>
+    <span class="cd-sep">:</span>
+    <div class="cd-box"><div class="cd-num" id="cd-s">59</div><div class="cd-lbl">Sec</div></div>
+  </div>
+</div>
+
+<!-- DEALS GRID -->
+<div class="page-wrap">
+  <div class="sec-header" style="margin-bottom:28px">
+    <div><h2>Hot Deals 🔥</h2><p class="sub">Original prices crossed out — sale price shown</p></div>
+  </div>
+  <div class="products-grid" id="dealsGrid"></div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-about"><div class="logo" style="margin-bottom:14px"><div class="logo-icon">KR</div>KIGALI REACH</div><p>Rwanda's premier e-commerce platform delivering premium products nationwide.</p></div>
+    <div class="footer-links"><h4>Quick Links</h4><a href="index.html">Home</a><a href="products.html">Products</a><a href="deals.html">Deals</a><a href="#">About Us</a></div>
+    <div class="footer-service"><h4>Customer Service</h4><a href="#">Contact Us</a><a href="https://wa.me/250788000000">WhatsApp Support</a><a href="#">Returns</a><a href="#">FAQs</a></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="payment-logos"><span class="pay-pill mtn">MTN MoMo</span><span class="pay-pill atl">Airtel Money</span><span class="pay-pill visa">VISA</span><span class="pay-pill mc">Mastercard</span></div>
+    <div class="footer-copy">&copy; 2026 KIGALI REACH. All rights reserved.</div>
+  </div>
+</footer>
+
+<div id="toast-container"></div>
+<div class="modal-overlay" id="loginModal"><div class="modal"><button class="modal-close" onclick="closeModal('loginModal')">&times;</button><h2>Welcome back</h2><p class="sub">Sign in</p><form id="loginForm"><div class="form-group"><label>Email</label><input type="email" required></div><div class="form-group"><label>Password</label><input type="password" required></div><button type="submit" class="btn-submit">Sign In</button></form></div></div>
+<div class="modal-overlay" id="signupModal"><div class="modal"><button class="modal-close" onclick="closeModal('signupModal')">&times;</button><h2>Create account</h2><p class="sub">Join today</p><form id="signupForm"><div class="form-group"><label>Name</label><input type="text" required></div><div class="form-group"><label>Email</label><input type="email" required></div><div class="form-group"><label>Password</label><input type="password" required></div><button type="submit" class="btn-submit">Create Account</button></form></div></div>
+
+<script src="script.js"></script>
+<script>
+const DEALS = [
+  { id:1,  name:"Nike Air Max 270",       category:"Fashion & Shoes",    price:85000,  salePrice:59000,  image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop",  inStock:true,  isNew:false },
+  { id:2,  name:"iPhone 15 Pro Max",      category:"Electronics",        price:1450000,salePrice:1299000,image:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop",  inStock:true,  isNew:true  },
+  { id:3,  name:"Sony WH-1000XM5",        category:"Electronics",        price:120000, salePrice:89000,  image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop",  inStock:true,  isNew:false },
+  { id:5,  name:"Gaming Laptop RTX 4070", category:"Electronics",        price:1800000,salePrice:1599000,image:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=800&auto=format&fit=crop",  inStock:true,  isNew:true  },
+  { id:7,  name:"Air Jordan 1 Retro",     category:"Fashion & Shoes",    price:130000, salePrice:89000,  image:"https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop",  inStock:true,  isNew:false },
+  { id:9,  name:"PlayStation 5",          category:"Gaming",             price:650000, salePrice:580000, image:"https://images.unsplash.com/photo-1606813907291-d86efa9b94db?q=80&w=800&auto=format&fit=crop",  inStock:false, isNew:false },
+  { id:10, name:"Baby Monitor Pro",       category:"Baby & Kids",        price:45000,  salePrice:35000,  image:"https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?q=80&w=800&auto=format&fit=crop",  inStock:true,  isNew:false },
+  { id:11, name:"Dyson Airwrap",          category:"Beauty & Health",    price:280000, salePrice:220000, image:"https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop",  inStock:true,  isNew:true  },
+  { id:13, name:"Smart Air Fryer 5L",     category:"Home Appliances",    price:75000,  salePrice:59000,  image:"https://images.unsplash.com/photo-1585515656978-3b6a75b0bdb3?q=80&w=800&auto=format&fit=crop",  inStock:true,  isNew:true  },
+  { id:14, name:"Xbox Controller",        category:"Gaming",             price:65000,  salePrice:49000,  image:"https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?q=80&w=800&auto=format&fit=crop",  inStock:true,  isNew:false },
+];
+
+document.getElementById("dealsGrid").innerHTML = DEALS.map(buildCard).join("");
+initCountdown("kr_flash_end");
+</script>
+</body>
+</html>
